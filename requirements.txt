@@ -1,0 +1,104 @@
+# ============================================
+# ENTERPRISE DECISION COPILOT
+# Python Dependencies
+# ============================================
+# Install with: pip install -r requirements.txt
+# ============================================
+
+# --------------------------------------------
+# DATABASE CONNECTIVITY
+# --------------------------------------------
+
+# PostgreSQL adapter for Python
+# Required for connecting to Supabase PostgreSQL database
+psycopg2-binary==2.9.9
+
+# SQLAlchemy ORM (optional, for more complex queries)
+# Provides a higher-level database abstraction
+sqlalchemy==2.0.25
+
+# --------------------------------------------
+# DATA GENERATION
+# --------------------------------------------
+
+# Faker - Generate realistic fake data
+# Used for creating synthetic customer names, addresses, etc.
+faker==22.5.1
+
+# NumPy - Numerical computing
+# Used for statistical distributions and random sampling
+numpy==1.26.3
+
+# --------------------------------------------
+# ENVIRONMENT & CONFIGURATION
+# --------------------------------------------
+
+# python-dotenv - Load environment variables from .env file
+# Keeps sensitive credentials out of code
+python-dotenv==1.0.0
+
+# --------------------------------------------
+# UTILITIES
+# --------------------------------------------
+
+# tqdm - Progress bars for long-running operations
+# Shows progress during data population
+tqdm==4.66.1
+
+# tabulate - Pretty print tables in console
+# Useful for displaying sample data during verification
+tabulate==0.9.0
+
+# --------------------------------------------
+# DATE/TIME HANDLING
+# --------------------------------------------
+
+# python-dateutil - Powerful date/time utilities
+# Helps with date calculations and parsing
+python-dateutil==2.8.2
+
+# --------------------------------------------
+# DEVELOPMENT & DEBUGGING (Optional)
+# --------------------------------------------
+
+# ipython - Enhanced interactive Python shell
+# Useful for testing queries interactively
+#ipython==8.20.0
+
+# --------------------------------------------
+# FUTURE STAGES (Not needed for Stage-1)
+# --------------------------------------------
+# Uncomment these when you reach later stages
+
+# # Stage 2 - API Development
+# fastapi==0.109.0
+# uvicorn==0.27.0
+# pydantic==2.5.3
+
+# # Stage 3 - AI/LLM Integration
+# openai==1.10.0
+# langchain==0.1.4
+
+# # Stage 4 - Vector Database (if needed)
+# pinecone-client==3.0.0
+
+# ============================================
+# INSTALLATION NOTES
+# ============================================
+#
+# Basic installation:
+#   pip install -r requirements.txt
+#
+# Using virtual environment (recommended):
+#   python -m venv venv
+#   source venv/bin/activate  # On Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# If psycopg2-binary fails on Mac M1/M2:
+#   brew install postgresql
+#   pip install psycopg2-binary
+#
+# If you get SSL errors with Supabase:
+#   Ensure your connection string includes ?sslmode=require
+#
+# ============================================
